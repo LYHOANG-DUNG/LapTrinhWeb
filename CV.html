@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="vn">
+    <head>
+            <title>Profile cá nhân</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="css/style.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            body{
+                font-family:monospace;
+             /*  margin-left: auto;
+               margin-right: auto;*/
+               margin: auto;
+              /* background-color: rgba(255, 255, 98, 0.392);*/
+               overflow: auto;
+
+            }
+           nav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            max-width:  25rem ;
+            max-height: 100vh;
+            margin-left: auto;
+            margin-right: auto;
+           
+           }
+           img{
+                margin-top: 22%;
+                margin-left: 15%;
+                margin-right: 15%;
+                width: 90%;
+                height: 90%;
+                object-fit: scale-down;/*chứa hình ảnh trong vùng */
+               
+           }
+           #container{
+                 width: 250px;
+                height: 250px;
+           }
+
+           #name{
+                color: rgb(7, 7, 65);
+                text-align: center;
+                font-weight:bolder ;
+                font-size: 35px ;
+           }
+           #name{
+            line-height: 15px;
+           }
+           #gmail{
+            font-family:'Courier New', Courier, monospace;
+            font-style: oblique;
+            font-size: 15px;
+           }
+           #menu ul{
+            width: 25rem;
+            text-align: center;
+            list-style-type: none;
+            padding: 0;
+           }
+         
+           #menu li{
+                font-weight:bolder ;
+                font-size: 20px ;
+                line-height: 35px;/*khoảng cách giưã 2 dòng*/
+                margin-left: 40px;
+                margin-right: 40px;
+                border: 2px solid rgb(13, 7, 25);
+                border-radius: 10px;/*bo đầu*/
+                margin-bottom: 3px;
+           }
+           #menu li:hover{
+            background-color: rgb(255, 123, 0);
+            color: aliceblue;
+           }
+
+           #menu a{
+            text-decoration: none;
+            color: black;
+           }
+          
+        /*   section {
+              
+                display: flex;
+                max-width: 75rem;
+                min-height: 100vh;
+                margin-left: 25rem;
+            }*/
+            .resume{
+                display: flex;
+                max-width: 75rem;
+                min-height: 80vh;
+                margin-left: 30rem;
+              
+            }
+              
+           
+            article {
+                margin-left: 5rem;
+                padding: 2rem;
+                text-align:initial;
+                min-width: 50rem;
+               font-size: 20px;               font-family:monospace;
+
+                background: linear-gradient(
+                    to right, 
+                    rgb(255, 61, 61), 
+                    rgb(31, 241, 35)
+                );/*chuyển màu về 1 phía*/
+                -webkit-background-clip: text;/*xác định phạm vi được thiết lập màu nền*/
+                -webkit-text-fill-color: transparent;/*tô màu cho văn bản*/
+             }
+             article h1{
+              font-size: 50px;
+             }
+            article li{
+                list-style-type: none;
+                text-align: left;
+
+            }
+            .about{
+               
+                font-size: 20px;
+                line-height: 25px;
+            }
+            #page{
+                width: 100%;
+                height: 100%;
+               
+                margin-right: auto;
+                margin-left: auto;
+          
+           
+                padding-top: 0px !important;
+                padding-right: 0px !important;
+                padding-bottom: 0px !important;
+                padding-left: 0px !important;
+            
+                }
+                section.home{
+                    min-height: 90vh;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    
+                    background-color: rgba(229, 173, 99, 0.555);
+                }
+               
+                header{
+                    font-size: 40px;
+                    text-align:justify;
+                }
+                    
+                #time li{
+                    line-height: 10px;
+                }
+
+                footer{
+                    background-color:rgba(229, 173, 99, 0.555);
+                    padding: 1rem;
+                    text-align: center;
+                }
+                footer a{
+                    color: rgb(228, 71, 71);
+                }
+        </style>
+    </head>
+   
+   
+    <body>
+        <header>
+
+        </header>
+
+
+        <nav >
+
+            <a href="CV.html">
+                <img id= "container" src="cv.png" >
+            </a>
+            <ul>
+                <h1 id="name">LÝ THỊ HOÀNG DUNG</h1>
+                <h3 id="gmail">Gmail:dungB1908323@student.ctu.edu.vn</h3>
+            </ul>
+            
+            <div id="menu">
+                <ul>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#about"><li>About</li></a>
+                    <a href="#edu"><li>Education</li></a>                  
+                    <a href="#skill"><li>Skills</li></a></li>                    
+                </ul>
+            </div>
+
+        </nav>
+
+        <!--Page Content-->
+
+        <div id="page"> 
+
+        <!--home-->
+        <section  id="home" class="home">
+            <div class="resume">
+
+                <article>
+                    <h1 >HI!</h1>
+                    <ul>
+                            <h2 style=" font-size: 40px; ">I'M Ly Thi Hoang Dung</h2>
+                            <h3>Can Tho University_Ninh Kieu_Can Tho</h3>
+                            <p>Satisfaction lies in the effort, not in the attainment, full effort is full victory.</p>
+                    </ul>
+                    <hr>
+                </article>
+            </div>
+        </section >
+       
+         <!--About-->
+         <section  id="about" class="home">
+            <div class="resume">
+
+                <article>
+                    <header>
+                        <h1 >About</h1>
+                    </header>
+                   
+                        <ul type="circle" class="about">
+                            
+                            <li >Full Name :  Ly Thi Hoang Dung </li>
+                            <li>Gender : female</li>
+                            <li>D. O P : 02/08/2001</li>
+                            <li> Phone Number : 0934 567 899 </li>
+                            <li > Gmail : dungb1908323@student.ctu.edu.vn </li>
+                            <li>Address:Nink Kieu, Can Tho</li>
+                    
+                        </ul>
+                        <hr>
+                    
+                </article>
+            </div>
+        </section >
+
+        <!--education-->
+      
+        <section  id="edu" class="home">
+            <div class="resume">
+
+                <article>
+                    <h1 >EDUCATION</h1>
+                    <table >
+                        <ul id="time">
+                           <li> <h3 class="fa fa-graduation-cap">  2019-2022</h3></li>
+                           <li> <p>Can Tho University</p></li>
+                           <li><p>Major: Data compunication & computer network</p></li>
+                        </li>
+                        </ul>
+
+                       
+                        <ul id="time">
+                            <li> <h3 class="fa fa-graduation-cap">  2016-2019</h3></li>
+                            <li> <p>Luu Huu Phuoc High school</p></li>
+                            <li><p></p></li>
+                         </li>
+                         </ul>
+
+                        
+                        <ul id="time">
+                            <li> <h3 class="fa fa-graduation-cap" > 2011-2016</h3></li>
+                            <li> <p>Ngo Quyen Junior High School</p></li>
+                            <li><p></p></li>
+                         </li>
+                         </ul>
+
+                        
+                         <ul id="time">
+                             <li> <h3 class="fa fa-graduation-cap">  2006-2011</h3></li>
+                             <li> <p>Nguyen Tri Phuong Primary School</p></li>
+                             <li><p></p></li>
+                          </li>
+                          </ul>
+
+                    </table>
+                    <hr>
+                </article>
+            </div>
+        </section >
+
+        <!--Skill-->
+         <section  id="skill" class="home">
+            <div class="resume">
+
+                <article>
+                    <header>
+                        <h1 >Skill</h1>
+                    </header>
+                   
+                        <ul type="circle" class="about">
+                           
+                            <li class="fa fa-heart"> Certificate For successfully completing the: how to connect with your customers over time and across devices</li><br>
+                            <li class="fa fa-heart">Certificate Use Canva to Create Desktop and Mobile-friendly Web Pages </li><br>
+                            <li class="fa fa-heart">3rd prize in computer science contest</li><br>
+                            <li class="fa fa-heart">High school diploma </li><br>
+                            <li class="fa fa-heart">Junior high diploma</li><br>
+                            <li class="fa fa-heart">Primary School diploma</li><br>
+                           
+                    
+                        </ul>
+                        <hr>
+                    
+                </article>
+            </div>
+        </section >
+
+
+        
+    </div>
+        <footer>
+            <a href="https://www.instagram.com/lth_jun/"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100011853784516"><i class="fa fa-facebook-f"></i></a>
+            <a href="https://www.pinterest.com/"> <i class="fa fa-pinterest"></i></a>
+        </footer>
+    </body>
+</html>
